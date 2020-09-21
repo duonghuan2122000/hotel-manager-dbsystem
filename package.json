@@ -1,0 +1,23 @@
+{
+  "name": "hotel-manager-dbsystem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duonghuan2122000/hotel-manager-dbsystem.git"
+  },
+  "author": "Jocelyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duonghuan2122000/hotel-manager-dbsystem/issues"
+  },
+  "homepage": "https://github.com/duonghuan2122000/hotel-manager-dbsystem#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2"
+  }
+}
