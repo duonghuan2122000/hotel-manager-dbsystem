@@ -1,5 +1,10 @@
 # Theme Hotel Manager
-Hướng dẫn commit Front-End cho ứng dụng.
+
+Trong theme mình sử dụng [w3.css](https://www.w3schools.com/w3css/default.asp). Một css reponsive nhẹ và khá đầy đủ các component
+
+---
+
+**Hướng dẫn commit Front-End cho ứng dụng.**
 
 ## Cài đặt
 
