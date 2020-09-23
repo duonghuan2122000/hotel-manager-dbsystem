@@ -15,10 +15,12 @@
         <a href="#" class="w3-bar-item w3-button">Link 1</a>
 
         <!-- Accordion -->
-        <button class="w3-button w3-block w3-left-align" onclick="showSubItem();">Item 
-            <svg class="w3-right" width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-              </svg>
+        <button class="w3-button w3-block w3-left-align" onclick="showSubItem();">Item
+            <svg class="w3-right" width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-caret-down-fill"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
         </button>
         <div id="sub-item" class="w3-hide w3-white w3-card">
             <a href="#" class="w3-bar-item w3-button">Sub Item 1</a>
@@ -44,11 +46,63 @@
                 <h1>Dashboard</h1>
             </div>
         </div>
+
+        <div id="piechart" class="w3-padding"></div>
+        <div id="columnChart" class="w3-padding"></div>
     </div>
     <!-- Section -->
 
     <!-- Javascript -->
     <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/gg-chart.js"></script>
+    <script>
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawPieChart);
+
+        function drawPieChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Phòng', 'Số lượng'],
+                ['Phòng trống', 11],
+                ['Phòng đang cho thuê', 2],
+                ['Phòng đang dọn dẹp', 5]
+            ]);
+
+            var options = {
+                title: 'Phòng trong khách sạn'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+
+
+        google.charts.load('current', { packages: ['corechart', 'bar'] });
+        google.charts.setOnLoadCallback(drawColumnChart);
+
+
+        function drawColumnChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Ngày', 'Số lượng phòng cho thuê'],
+                ['23/09', 11],
+                ['24/09', 2],
+                ['25/09', 5]
+            ]);
+
+            var options = {
+                title: 'Phòng trong khách sạn',
+                vAxis: {
+                    title: 'Số lượng phòng cho thuê'
+                }
+            };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById('columnChart'));
+
+            chart.draw(data, options);
+        }
+    </script>
     <!-- Javascript -->
 </body>
 
