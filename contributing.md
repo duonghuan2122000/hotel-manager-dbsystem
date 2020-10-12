@@ -1,16 +1,10 @@
 **Hướng dẫn contribute cho ứng dụng.**
 
-## Cài đặt
-
-    git clone https://github.com/duonghuan2122000/hotel-manager-dbsystem.git
-    cd hotel-manager-dbsystem
-
-## Commit 
-
-    git add .
-    git commit -m "tên commit"
-    git push
-   Lưu ý: Trước khi push nhớ kiểm tra commit hiện tại là mới nhất (tức là đang ở commit cuối cùng của project nếu không sẽ bị lỗi)
-   
-
-    git pull
+ 1. Fork repository
+ 2. Clone repository về máy
+ 3. Tạo branch mới (nếu cầu)
+ 4. Commit trên branch vừa tạo (hoặc default: master)
+ 5. Tạo pull request (Cái này t sẽ làm)
+ 6. Merge code ( Cái này t sẽ làm)
+ ---
+[https://github.com/firstcontributions/first-contributions/blob/master/translations/README.vn.md](https://github.com/firstcontributions/first-contributions/blob/master/translations/README.vn.md)
