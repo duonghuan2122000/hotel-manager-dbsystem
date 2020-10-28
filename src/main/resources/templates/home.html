@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/w3.css">
+</head>
+
+<body>
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-collapse w3-card w3-animate-left" id="sidebar"
+     style="width: 200px; z-index: 4;">
+    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+
+    <!-- Accordion -->
+    <button class="w3-button w3-block w3-left-align" onclick="showSubItem();">Item
+<!--        <svg class="w3-right" width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-caret-down-fill"-->
+<!--             fill="currentColor" xmlns="http://www.w3.org/2000/svg">-->
+<!--            <path-->
+<!--                    d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />-->
+<!--        </svg>-->
+    </button>
+    <div id="sub-item" class="w3-hide w3-white w3-card">
+        <a href="#" class="w3-bar-item w3-button">Sub Item 1</a>
+        <a href="#" class="w3-bar-item w3-button">Sub Item 2</a>
+    </div>
+    <!-- Accordion -->
+
+    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+<!-- Sidebar -->
+
+<!-- Overlay -->
+<div class="w3-overlay" id="overlay" onclick="closeSidebar();" style="cursor: pointer;"></div>
+
+<!-- Section -->
+<div class="w3-main" style="margin-left: 200px;">
+    <div class="w3-teal">
+        <div class="w3-container">
+            <button style="margin: 10px 0;" title="Open Sidebar"
+                    class="w3-button w3-teal w3-hover-teal w3-xlarge w3-left w3-hide-large"
+                    onclick="openSidebar();">&#9776;</button>
+            <h1>Dashboard</h1>
+        </div>
+    </div>
+</div>
+<!-- Section -->
+
+<!-- Javascript -->
+<script src="js/script.js"></script>
+<!-- Javascript -->
+</body>
+
+</html>
